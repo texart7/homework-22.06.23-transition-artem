@@ -55,15 +55,16 @@
     content: "";
     display: block;
     height: 5px;
-    width: 100%;
-    
+    width: 0%;
+    margin-left: auto;
+     
     transition: width 0.8s ease-in-out;
 
-    background-color: rgb(171, 8, 8);
+    background-color: rgb(8, 11, 171);
     font-size: 0.5em;
   }
   
 
   .main-article__heading:hover::after{
-    width: 0%;
+    width: 100%;
   }
