@@ -1,78 +1,70 @@
-:root{
-    background-color:rgba(40, 38, 60, 0.493);
+:root {
+  background-color: rgba(40, 38, 60, 0.493);
 }
 
 .page-header {
-    padding: 0.5em;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    background-color: rgb(139, 122, 167);
-    box-shadow: 0 2px 10px;
-  }
+  padding: 0.5em;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgb(139, 122, 167);
+  box-shadow: 0 2px 10px;
+}
 
-  .page-header__list {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
+.page-header__list {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
 
-  .page-header__list-item {
-    display: inline-block;
-  }
+.page-header__list-item {
+  display: inline-block;
+}
 
-  .page-header__link {
-    padding: 1.5em;
-    color: rgb(241, 229, 207);
-    background-color: #ffffff44;
-    text-decoration: none;
-    font-family: system-ui;
-  }
+.page-header__link {
+  padding: 1.5em;
+  color: rgb(241, 229, 207);
+  background-color: #ffffff44;
+  text-decoration: none;
+  font-family: system-ui;
+}
 
 .main-article__heading {
-    width: 50%;
-    margin: 10px auto;
-  
-    text-align: center;
-    position: relative;
-  
-    color:rgb(255, 255, 255);
-    background-color: rgb(122, 169, 153);
-    text-align: center;
-    text-transform: uppercase;
-    font-family: system-ui;
-    font-size: 1.5rem;
-  }
+  width: 50%;
+  margin: 10px auto;
 
+  text-align: center;
+  position: relative;
+
+  color: rgb(255, 255, 255);
+  background-color: rgb(122, 169, 153);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui;
+  font-size: 1.5rem;
+}
+
+.main-article__heading::before,
+.main-article__heading::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  transition: width 0.8s ease-in-out;
+}
+  
   .main-article__heading::before{
-    content: "";
-    display: block;
-    height: 5px;
-    width: 0px;
-  
-    transition: width 0.8s ease-in-out;
-  
-    background-color: rgb(110, 108, 121);
-    font-size: 0.5em;
-  }
-  .main-article__heading:hover::before{
-    width: 100%;
+  background-color: rgb(110, 108, 121);
   }
 
-  .main-article__heading::after{
-    content: "";
-    display: block;
-    height: 5px;
-    width: 0%;
-    margin-left: auto;
-     
-    transition: width 0.8s ease-in-out;
 
-    background-color: rgb(59, 59, 61);
-    font-size: 0.5em;
-  }
-  
-  .main-article__heading:hover::after{
-    width: 100%;
-  }
+.main-article__heading::after {
+  margin-left: auto;
+  background-color: rgb(59, 59, 61);
+}
+
+.main-article__heading:hover::before,
+.main-article__heading:hover::after {
+  width: 100%;
+}
