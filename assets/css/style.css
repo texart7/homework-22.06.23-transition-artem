@@ -51,7 +51,7 @@
   display: block;
   height: 5px;
   width: 0%;
-  transition: width 0.8s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
   
   .main-article__heading::before{
